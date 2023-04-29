@@ -11,7 +11,8 @@
 
 header{
     grid-area: A;
-    background-color: #009FBD;
+    background-color: #2F0F5D;
+    color: white
 }
 
 nav{
@@ -31,10 +32,12 @@ main{
 
 footer{
     grid-area: E;
-    background-color: #98A8F8;
-    color: black;
+    background-color: #0A4D68;
+    color: white;
 }
+
 .centrado {
+   
     text-align: center;
 }
 
@@ -47,11 +50,11 @@ footer{
 }
 
 .menu-horizontal a{
-    background-color: aqua;
-    color: black;
+    background-color: #212A3E;
+    color: white;
     text-decoration: none;
-    padding: 10px 40px;
-    margin: 20px;
+    padding: 10px 50px;
+    margin: 5px;
     display: inline-block;
 }
 
@@ -65,11 +68,10 @@ footer{
     text-decoration: none;
     padding: 10px 40px;
     margin: 10px;
-    background-color: aqua;
-    color: black;
+    background-color: #0014FF;
+    color: antiquewhite;
     display:block;
 }
-
 
 @media (max-width: 500px) {
 

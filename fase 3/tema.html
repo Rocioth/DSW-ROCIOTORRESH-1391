@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.style.css">
+    <link rel="stylesheet" href="css/css.style.css">
 </head>
+
 <body class="contenedor">
     <header>
-        <h1 class= "centrado"> Comprendiendo el mundo de Flex Box </h1>
+        <h1 class="centrado"> Comprendiendo el mundo de Flex Box </h1>
     </header>
     <nav>
         <ul class="menu-horizontal">
@@ -27,70 +29,139 @@
 
     </aside>
     <main>
+
         <section>
-            <h2> Importancia del término Flex Box</h2>
-            <img src="Imagenes/Logo FlexBox.jpg" alt="LogoFlexBox">
-            <p>
-                El módulo (Caja flexible), comúnmente llamado Flexbox (una recomendación candidata del
-                W3C a partir de octubre de 2017) tiene como objetivo proporcionar una forma más
-                eficiente de diseñar, alinear y distribuir el espacio entre los artículos en un
-                contenedor, incluso cuando su tamaño es desconocido y / o dinámico (de ahí la palabra
-                "flexible").Flexbox Layout.<br>
-                La idea principal detrás del diseño flexible es dar al contenedor la capacidad de
-                alterar el ancho / alto (y orden) de sus elementos para llenar mejor el espacio
-                disponible (principalmente para adaptarse a todo tipo de dispositivos de visualización y
-                tamaños de pantalla). Un contenedor flexible expande los artículos para llenar el
-                espacio libre disponible o los reduce para evitar el desbordamiento.<br>
-                Lo más importante es que el diseño de Flexbox es independiente de la dirección a
-                diferencia de los diseños regulares (bloque que está basado verticalmente y en línea que
-                está basado horizontalmente). Si bien funcionan bien para las páginas, carecen de
-                flexibilidad (sin juego de palabras) para admitir aplicaciones grandes o complejas
-                (especialmente cuando se trata de cambiar la orientación, cambiar el tamaño, estirar,
-                reducir, etc.).
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2> Conceptos básicos y terminología</h2>
+            <h2 class="centrado"> Conceptos básicos y terminología</h2>
+
+            <h3> El modelo Flex Box </h3>
+
             <p>
                 Dado que Flexbox es un módulo completo y no una sola propiedad, implica muchas cosas, incluido todo su
-                conjunto de propiedades. Algunos de ellos están destinados a ser colocados en el contenedor (elemento padre,
+                conjunto de propiedades. Algunos de ellos están destinados a ser colocados en el contenedor (elemento
+                padre,
                 conocido como "contenedor flexible"), mientras que los otros están destinados a ser establecidos en los
                 hijos (dichos "elementos flexibles").<br>
-                Si el diseño "normal" se basa en las direcciones de flujo en bloque y en línea, el diseño flexible se basa
+                Si el diseño "normal" se basa en las direcciones de flujo en bloque y en línea, el diseño flexible se
+                basa
                 en "direcciones de flujo flexible". Por favor, eche un vistazo a esta figura de la especificación,
                 explicando la idea principal detrás del diseño flexible.
             </p>
-            <img src="Imagenes/Diagrama flexbox.jpg"
-                alt=" Disposición de los elementos de acuerdo el modelo FlexBox">
-    
+            <center>
+                <img src="Imagenes/Diagrama flexbox.jpg"
+                    alt=" Disposición de los elementos de acuerdo el modelo FlexBox" width="70%" height="400px">
+            </center>
+
             <p> Cuando los elementos se presentan como cajas flexibles, se distribuyen con respecto a dos ejes: los
-                elementos se colocarán siguiendo el eje (de a ) o el eje transversal (de a ).main
-                axismain-startmain-endcross-startcross-end</p>
-            <p> Eje principal: el eje principal de un contenedor flexible es el eje principal a lo largo del cual se colocan
+                elementos se colocarán siguiendo el eje (de a) o el eje transversal (de a).main
+                axismain-startmain-endcross-startcross-end.</p>
+
+            <p> EJE PRINCIPAL: el eje principal de un contenedor flexible es el eje principal a lo largo del cual se
+                colocan
                 los elementos flexibles. Cuidado, no es necesariamente horizontal; Depende de la propiedad (ver más
                 abajo).flex-direction.</p>
-            <p> Main-start | main-end: Los elementos flexibles se colocan dentro del contenedor comenzando desde main-start
+
+            <p> MAIN-START | MAIN-END: los elementos flexibles se colocan dentro del contenedor comenzando desde
+                main-start
                 y pasando por main-end.</p>
-            <p> Tamaño principal: el ancho o alto de un elemento flexible, lo que esté en la dimensión principal, es el
+
+            <p> TAMAÑO PRINCIPAL: el ancho o alto de un elemento flexible, lo que esté en la dimensión principal, es el
                 tamaño principal del artículo. La propiedad de tamaño principal del elemento flexible es la propiedad
                 'width' o 'height', lo que se encuentre en la dimensión principal.</p>
-            Eje transversal: el eje perpendicular al eje principal se denomina eje transversal. Su dirección depende de
-            la dirección del eje principal.</p>
-            <p> Cross-start | cross-end: las líneas flexibles se llenan con elementos y se colocan en el contenedor
-                comenzando en el lado de inicio cruzado del contenedor flex y yendo hacia el lado transversal.<br>
-                Tamaño de cruz: el ancho o alto de un elemento flexible, lo que esté en la dimensión transversal, es el
-                tamaño cruzado del elemento. La propiedad de tamaño de cruz es cualquiera de 'ancho' o 'alto' que esté en la
+
+            <p> EJE TRANSVERSAL: el eje perpendicular al eje principal se denomina eje transversal. Su dirección depende
+                de la dirección del eje principal.</p>
+
+            <p> CROSS-START | CROSS-END: las líneas flexibles se llenan con elementos y se colocan en el contenedor
+                comenzando en el lado de inicio cruzado del contenedor flex y yendo hacia el lado transversal.</p>
+
+            <p> TAMAÑO DE CRUZ: el ancho o alto de un elemento flexible, lo que esté en la dimensión transversal, es el
+                tamaño cruzado del elemento. La propiedad de tamaño de cruz es cualquiera de 'ancho' o 'alto' que esté
+                en la
                 dimensión cruzada. </p>
+
+            <h3> Propiedades de Flex Box</h3>
+
+            <h4> Propiedades para el contenedor</h4>
+
+            <h4> Align items</h4>
+
+            <p> Esto define el comportamiento predeterminado de cómo se disponen los elementos flexibles a lo largo del
+                eje transversal en la línea actual.<br>
+            <p> STRETCH (PREDETERMINADO): estirar para llenar el contenedor (aún respetar min-width/max-width).<br>
+            <p> BASELINE: los elementos están alineados, como se alinean sus líneas base.<br>
+            <p> FLEX-START / START / SELF-START: los elementos se colocan al comienzo del eje transversal. La
+                diferencia entre estos es sutil, y se trata de respetar las reglas o las
+                reglas.flex-directionwriting-mode.<br>
+            <p> FLEX-END: los elementos se colocan al final del eje transversal. La diferencia de nuevo es sutil y se
+                trata de respetar las reglas vs. reglas.flex-directionwriting-mode.<br>
+            <p> CENTER: los elementos están centrados en el eje transversal.<br>
+
+                <center>
+                    <img src="imagenes/Align-items.png" alt=" Propiedad align-items" width="70%" height="400px">
+                </center>
+
+            <h4> Justificar contenido</h4>
+
+            <p> Esto define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre adicional
+                sobrante cuando todos los elementos flexibles de una línea son inflexibles o flexibles pero han
+                alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos cuando
+                desbordan la línea.<br>
+            <p> FLEX-START (PREDETEERMINADO): los elementos se empaquetan hacia el inicio de la dirección flexible.</p>
+            <p> FLEX-END: los artículos se embalan hacia el final de la dirección flexible.</p>
+            <p> START: los artículos se empacan hacia el comienzo de la dirección.writing-mode</p>
+            <p> END: los artículos se empacan hacia el final de la dirección.writing-mode.</p>
+            <p> LEFT: los artículos se empaquetan hacia el borde izquierdo del contenedor, a menos que eso no tenga
+                sentido con el , entonces se comporta como .flex-directionstart.</p>
+            <p> RIGHT: los artículos se empaquetan hacia el borde derecho del contenedor, a menos que eso no tenga
+                sentido con el , entonces se comporta como .flex-directionend. </p>
+            <p> CENTER: los elementos están centrados a lo largo de la línea.</p>
+            <p> SPACE-BETWEEN: los artículos se distribuyen uniformemente en la línea; el primer elemento está en la
+                línea de inicio, el último elemento en la línea final.</p>
+            <p> SPACE-AROUND: los elementos se distribuyen uniformemente en la línea con el mismo espacio a su
+                alrededor.Tenga en cuenta que visualmente los espacios no son iguales, ya que todos los elementos tienen
+                el mismo
+                espacio en ambos lados. El primer elemento tendrá una unidad de espacio contra el borde del contenedor,
+                pero dos unidades de espacio entre el siguiente elemento porque ese siguiente elemento tiene su propio
+                espaciado que se aplica.</p>
+            <p> SPACE-EVENLY: los elementos se distribuyen de modo que el espaciado entre dos elementos cualesquiera (y
+                el espacio en los bordes) sea igual.</p>
+
+                <center>
+                    <img src="imagenes/justify-content.png" alt=" Propiedad justificar contenido" width="70%" height="400px">
+                </center>
+
+            <h4> Alinear contenido</h4>
+
+            <p> Esto alinea las líneas de un contenedor flexible cuando hay espacio adicional en el eje transversal, de
+                manera similar a cómo alinea los elementos individuales dentro del eje principal.justify-content.
+            <p> NORMAL (PREDETERMINADO): los elementos se empaquetan en su posición predeterminada como si no se hubiera
+                establecido ningún valor.</p>
+            <p> FLEX-START  / START: artículos embalados al inicio del contenedor. El (más apoyado) honra el mientras
+                honra la dirección.flex-startflex-directionstartwriting-mode.</p>
+            <p> FLEX END / END: artículos embalados hasta el final del contenedor. El (más apoyo) honra el mientras que
+                el final honra la dirección.flex-endflex-directionwriting-mode.</p>
+            <p> CENTER: elementos centrados en el contenedor.</p>
+            <p> SPACE-BETWEEN: artículos distribuidos uniformemente; La primera línea está al principio del contenedor,
+                mientras que la última está al final.</p>
+            <p> SPACE-AROUND: elementos distribuidos uniformemente con el mismo espacio alrededor de cada línea.</p>
+            <p> SPACE-EVENLY: los elementos se distribuyen uniformemente con el mismo espacio a su alrededor.</p>
+            <p> STRECH: las líneas se estiran para ocupar el espacio restante.</p>
+
+                <center>
+                    <img src="imagenes/Align-content.png" alt=" Propiedad alinear contenido" width="70%" height="400px">
+                </center>
+            
+
         </section>
         <hr>
     </main>
     <footer class="centrado">
         <p>
             © 2023 Web Design | Todos los derechos reservados<br>
-            Fecha de actualización: 14 de marzo de 2023 <br>
+            Fecha de actualización: abril de 2023 <br>
         </p>
     </footer>
 
 </body>
+
 </html>

@@ -5,92 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.style.css">
+    <link rel="stylesheet" href="css/css.style.css">
 </head>
 <body class="contenedor">
     <header>
-        <h1 class= "centrado"> Comprendiendo el mundo de Flex Box </h1>
+        <h1 class="centrado"> Comprendiendo el mundo de Flex Box </h1>
     </header>
     <nav>
         <ul class="menu-horizontal">
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="audio.html"> Audio</a></li>
-            <li><a href="tema.html"> Flex Box</a></li>
+            <li> <a href="index.html"> Inicio</a> </li>
+            <li> <a href="audio.html"> Audio</a> </li>
+            <li> <a href="tema.html"> Tema </a> </li>
         </ul>
     </nav>
     <aside>
         <ul class="menu-aside">
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="audio.html"> Audio</a></li>
-            <li><a href="tema.html"> Flex Box</a></li>
-            <li><a href="nosotros.html"> Nosotros</a></li>
+            <li> <a href="index.html"> Inicio</a> </li>
+            <li> <a href="audio.html"> Audio del tema</a> </li>
+            <li> <a href="tema.html">  El tema</a> </li>
+            <li> <a href="nosotros.html">  Nosotros</a> </li>
 
+        </ul>
     </aside>
     <main>
-        <section>
-            <h2 class= "centrado"> Importancia del término Flex Box</h2>
-            <img src="Imagenes/Logo FlexBox.jpg" alt="LogoFlexBox">
-            <p>
-                El módulo (Caja flexible), comúnmente llamado Flexbox (una recomendación candidata del
-                W3C a partir de octubre de 2017) tiene como objetivo proporcionar una forma más
-                eficiente de diseñar, alinear y distribuir el espacio entre los artículos en un
-                contenedor, incluso cuando su tamaño es desconocido y / o dinámico (de ahí la palabra
-                "flexible").Flexbox Layout.<br>
-                La idea principal detrás del diseño flexible es dar al contenedor la capacidad de
-                alterar el ancho / alto (y orden) de sus elementos para llenar mejor el espacio
-                disponible (principalmente para adaptarse a todo tipo de dispositivos de visualización y
-                tamaños de pantalla). Un contenedor flexible expande los artículos para llenar el
-                espacio libre disponible o los reduce para evitar el desbordamiento.<br>
-                Lo más importante es que el diseño de Flexbox es independiente de la dirección a
-                diferencia de los diseños regulares (bloque que está basado verticalmente y en línea que
-                está basado horizontalmente). Si bien funcionan bien para las páginas, carecen de
-                flexibilidad (sin juego de palabras) para admitir aplicaciones grandes o complejas
-                (especialmente cuando se trata de cambiar la orientación, cambiar el tamaño, estirar,
-                reducir, etc.).
-            </p>
+        <section >
+            <h2>Nosotros</h2>
+
+            <center>
+                <img src="imagenes/RocioTH.png.png" alt=""  width="200px" height="200px">
+            </center>
+
+            <p class="centrado">
+                Nombre: Rocio Torres Huertas <br>
+                Programa: Ingeniería de Sistemas.<br>
+                Correo: rtorresh@unadvirtual.edu.co <br>
+                Skipe: ROCIOTORRESHUERTAS <br>
+                Teléfono: 3143265800
+             </p>
+
         </section>
-        <hr>
-        <section>
-            <h2> Conceptos básicos y terminología</h2>
-            <p>
-                Dado que Flexbox es un módulo completo y no una sola propiedad, implica muchas cosas, incluido todo su
-                conjunto de propiedades. Algunos de ellos están destinados a ser colocados en el contenedor (elemento padre,
-                conocido como "contenedor flexible"), mientras que los otros están destinados a ser establecidos en los
-                hijos (dichos "elementos flexibles").<br>
-                Si el diseño "normal" se basa en las direcciones de flujo en bloque y en línea, el diseño flexible se basa
-                en "direcciones de flujo flexible". Por favor, eche un vistazo a esta figura de la especificación,
-                explicando la idea principal detrás del diseño flexible.
-            </p>
-            <img src="Imagenes/Diagrama flexbox.jpg"
-                alt=" Disposición de los elementos de acuerdo el modelo FlexBox">
-    
-            <p> Cuando los elementos se presentan como cajas flexibles, se distribuyen con respecto a dos ejes: los
-                elementos se colocarán siguiendo el eje (de a ) o el eje transversal (de a ).main
-                axismain-startmain-endcross-startcross-end</p>
-            <p> Eje principal: el eje principal de un contenedor flexible es el eje principal a lo largo del cual se colocan
-                los elementos flexibles. Cuidado, no es necesariamente horizontal; Depende de la propiedad (ver más
-                abajo).flex-direction.</p>
-            <p> Main-start | main-end: Los elementos flexibles se colocan dentro del contenedor comenzando desde main-start
-                y pasando por main-end.</p>
-            <p> Tamaño principal: el ancho o alto de un elemento flexible, lo que esté en la dimensión principal, es el
-                tamaño principal del artículo. La propiedad de tamaño principal del elemento flexible es la propiedad
-                'width' o 'height', lo que se encuentre en la dimensión principal.</p>
-            Eje transversal: el eje perpendicular al eje principal se denomina eje transversal. Su dirección depende de
-            la dirección del eje principal.</p>
-            <p> Cross-start | cross-end: las líneas flexibles se llenan con elementos y se colocan en el contenedor
-                comenzando en el lado de inicio cruzado del contenedor flex y yendo hacia el lado transversal.<br>
-                Tamaño de cruz: el ancho o alto de un elemento flexible, lo que esté en la dimensión transversal, es el
-                tamaño cruzado del elemento. La propiedad de tamaño de cruz es cualquiera de 'ancho' o 'alto' que esté en la
-                dimensión cruzada. </p>
-        </section>
-        <hr>
     </main>
     <footer class="centrado">
         <p>
             © 2023 Web Design | Todos los derechos reservados<br>
-            Fecha de actualización: 14 de marzo de 2023 <br>
+            Fecha de actualización: abril de 2023 <br>
         </p>
     </footer>
-
 </body>
 </html>
