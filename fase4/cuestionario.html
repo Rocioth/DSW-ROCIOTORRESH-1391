@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="css/css.style.css">
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1 class= "centrado"> Comprendiendo el mundo de Flex Box </h1>
+    </header>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="audio.html"> Audio</a></li>
+            <li><a href="tema.html"> Flex Box</a></li>
+            <li><a href="cuestionario.html"> Cuestionario</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul class="menu-aside">
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="audio.html"> Audio</a></li>
+            <li><a href="tema.html"> Flex Box</a></li>
+            <li><a href="cuestionario.html"> Cuestionario</a></li>
+            <li><a href="nosotros.html"> Nosotros</a></li>
+    </aside>
+    <main>
+
+    <h1 id="resultado">Responda las siguientes preguntas</h1>
+    <div>
+        <form name="formulario">
+            <h3>1. ¿Qué es el término Flexbox y para qué sirve? </h3>
+
+            <input type="radio" name="r1" value="a"> a. Es el módulo de Caja Rigida, comúnmente llamado flexbox, fue
+            diseñado como un modelo bidimensional de layout, y como un método que pueda ayudar a controlar columnas y
+            filas a la vez. <br>
+            <input type="radio" name="r1" value="b"> b. Es el módulo de Caja Flexible que tiene como objetivo
+            proporcionar una forma más eficiente de diseñar, alinear y distribuir el espacio entre los items en un
+            contenedor, incluso cuando su tamaño es desconocido y / o dinámico. <br>
+            <input type="radio" name="r1" value="c"> c. El módulo de diseño de cuadrícula que ofrece un sistema de
+            diseño basado en cuadrícula, con filas y columnas, lo que facilita el diseño de páginas web sin tener que
+            usar flotantes y posicionamiento. <br>
+
+            <h3>2. Propiedad que establece la dirección del eje principal y por tanto la dirección de los elementos flex. </h3>
+
+            <input type="radio" name="r2" value="a"> a. Flex-direction.<br>
+            <input type="radio" name="r2" value="b"> b. Flex-basis. <br>
+            <input type="radio" name="r2" value="c"> c. Flex-grow. <br>
+
+            <h3>3. ¿Cuáles de las siguientes propiedades son de los elementos (ítems) Flex?</h3>
+
+            <input type="radio" name="r3" value="a"> a. Justify-content, Flex-flow, Align-items .<br>
+            <input type="radio" name="r3" value="b"> b. Flex-flow. Flex-wrap, Flex. <br>
+            <input type="radio" name="r3" value="c"> c. Align-self, Order, Flex. <br>
+
+            <h3>4. ¿Qué valores se aceptan por la propiedad de display?</h3>
+
+            <input type="radio" name="r4" value="a"> a. Flex-inline, Flex.<br>
+            <input type="radio" name="r4" value="b"> b. Order, Flex. <br>
+            <input type="radio" name="r4" value="c"> c. Flex, Flex-direction. <br>
+
+            <h3>5. ¿Cuál de las siguientes propiedades define un contenedor flex (Flexbox)?</h3>
+
+            <input type="radio" name="r5" value="a"> a. Flex.<br>
+            <input type="radio" name="r5" value="b"> b. Display. <br>
+            <input type="radio" name="r5" value="c"> c. Baseline. <br>
+
+         <input type="button" value="Enviar" onclick="procesarRespuestas()">
+        </form>
+    </div>
+    </main>
+    <footer class="centrado">
+        <p>
+            © 2023 Web Design | Todos los derechos reservados<br>
+            Fecha de actualización: mayo de 2023 <br>
+        </p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
